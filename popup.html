@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arrea</title>
+  <link rel="stylesheet" href="popup.css">
+  <script defer src="settings.js"></script>
+  <script defer src="popup.js"></script>
+</head>
+<body>
+  <header>
+    <img src="icons/48.png" alt="" width="38" height="38">
+    <div><h1>Arrea</h1><p>Claude, Gemini y ChatGPT</p></div>
+  </header>
+  <fieldset disabled>
+    <legend class="sr-only">Ajustes del vaquero</legend>
+    <label><span>Activado en los chats</span><input id="enabled" type="checkbox"></label>
+    <label><span>Bocadillos</span><input id="bubbles" type="checkbox"></label>
+    <label><span>Sonido</span><input id="sound" type="checkbox"></label>
+    <label><span>Tiempo por latigazo al empezar <output for="pace" id="seconds"></output></span>
+      <input id="pace" type="range" min="1500" max="15000" step="500">
+    </label>
+  </fieldset>
+  <button id="preview" type="button">Probar las escenas</button>
+  <p id="error" role="status" hidden></p>
+</body>
+</html>

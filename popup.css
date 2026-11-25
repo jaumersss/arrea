@@ -1,0 +1,22 @@
+:root{color-scheme:light dark;font:14px/1.4 system-ui,sans-serif}
+*{box-sizing:border-box}
+body{width:300px;margin:0;padding:16px;background:#f7f6ef;color:#252b23}
+header{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+h1{margin:0;font-size:19px;line-height:1.2}
+p{margin:2px 0 0;color:#515a4d}
+fieldset{min-width:0;border:0;margin:0;padding:0}
+label{min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #dde0d4;cursor:pointer}
+label:has(input[type=range]){flex-direction:column;align-items:stretch;justify-content:center;gap:6px;padding:9px 0}
+output{float:right;font-variant-numeric:tabular-nums}
+input{accent-color:#386c3c;cursor:pointer;margin:0}
+input[type=checkbox]{width:18px;height:18px}
+button{width:100%;border:0;border-radius:7px;background:#315c33;color:white;min-height:44px;margin-top:7px;font:inherit;font-weight:650;cursor:pointer}
+button:hover{background:#244b26}
+:focus-visible{outline:2px solid #497e46;outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#error{margin-top:8px}
+@media(prefers-color-scheme:dark){
+  body{background:#252a24;color:#f2f2e9}
+  p{color:#c0c8b9}
+  label{border-color:#454e42}
+}
